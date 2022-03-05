@@ -8,6 +8,7 @@ const color = require('colors')
 
 router.get('/order-summery', async (req, res) => {
     try {
+        // res.status(200).sendFile(__dirname, 'public/order-summary/index.html')
         res.sendFile(path.resolve('public', 'order-summary', 'index.html'))
         // __dirname, '../public/order-summary/index.html'))
     } catch (err) {
