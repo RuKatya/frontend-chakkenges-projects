@@ -13,9 +13,7 @@ app.use(express.static(path.resolve(__dirname, 'public/order-summary'))) //stati
 
 //ROUTER
 const index = require('./router')
-const projects = require('./router/projects', () => {
-    app.use(express.static(path.resolve(__dirname, 'public/order-summary'))) //static
-})
+const projects = require('./router/projects')
 
 app.use('/', index)
 app.use('/', projects)
