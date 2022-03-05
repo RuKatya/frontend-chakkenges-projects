@@ -8,17 +8,12 @@ const color = require('colors')
 //PORT
 const PORT = process.env.PORT || 6565; //connect to port 6565
 
-
 app.use(express.static(path.resolve(__dirname, 'public'))) //static
-// app.use(express.static(path.resolve(__dirname, 'public/order-summary'))) //static
 
 //ROUTER
 const index = require('./router')
-// const projects = require('./router/projects');
 
-app.get('/', (req, res) => {
-    res.status(200).sendFile('index.html')
-})
+app.use('/', index)
 
 app.get('*', function (req, res) {
     res.status(404).sendFile(__dirname, '/404.html');

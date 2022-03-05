@@ -7,7 +7,7 @@ const color = require('colors')
 
 router.get('/', async (req, res) => {
     try {
-        res.sendFile('index.html', { root: __dirname })
+        res.status(200).sendFile('index.html')
     } catch (err) {
         console.log(color.bgRed.black(err))
     }
