@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+//Media query
+$mobile:375px;
+$desktop: 1440px;
+
+// Colors
+$primaryLightCyan: hsl(193, 38%, 86%);
+$primaryNeonGreen: hsl(150, 100%, 66%);
+$naturalGrayishBlue: hsl(217, 19%, 38%);
+$naturalDarkGrayishBlue: hsl(217, 19%, 24%);
+$naturalDarkBlue: hsl(218, 23%, 16%);
+
+//Typography
+$fontSize:1.4rem;
+$Weights:800;
+$fontFamily:'Manrope',
+sans-seri;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $naturalDarkBlue;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 2%;
+    color: rgb(109, 109, 109);
+
+    a {
+        color: hsl(228, 72%, 60%);
+        text-decoration: none;
+    }
+}
+
+button {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.advice {
+    width: 90%;
+    padding: 12% 0%;
+    text-align: center;
+    position: relative;
+    background-color: $naturalDarkGrayishBlue;
+    color: $primaryLightCyan;
+    font-family: $fontFamily;
+    border-radius: 1.2rem;
+
+    &Num {
+        color: $primaryNeonGreen;
+        font-size: 0.6rem;
+        margin: 0% 0% 7% 0%;
+        letter-spacing: 0.3rem;
+    }
+
+    &Text {
+        width: 90%;
+        margin: 0 auto;
+        // background-color: aqua;
+        font-size: $fontSize;
+        font-weight: $Weights;
+        font-family: $fontFamily;
+    }
+
+    &Img {
+        margin: 10% 0% 0% 0%;
+    }
+
+    &Btn {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        bottom: -10%;
+        background-color: $primaryNeonGreen;
+        border: none;
+        left: 43%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        outline: none;
+        // transition: all 1.5s;
+
+        &:hover {
+            box-shadow:
+                0 0 5px hsla(150, 100%, 66%, 0.3),
+                0 0 10px hsla(150, 100%, 66%, 0.3),
+                0 0 20px hsla(150, 100%, 66%, 0.3),
+                0 0 30px hsla(150, 100%, 66%, 0.3),
+            ;
+            background-color: $primaryNeonGreen;
+            transition: all 0.5s;
+        }
+
+        &:not(:hover) {
+            transition: 0.5s;
+        }
+    }
+}
+
+//MEDIAQUERY
+@media only screen and (min-width:$desktop) {
+    .attribution {
+        font-size: 1.1rem;
+        bottom: 1%;
+    }
+
+    .advice {
+        width: 25%;
+        padding: 2.5% 0%;
+
+        &Num {
+            font-size: 0.7rem;
+        }
+
+        &Text {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &Img {
+            width: 90%;
+        }
+
+        &Btn {
+            left: 44.5%;
+        }
+    }
+}

@@ -3,13 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Frontend Mentor | Advice generator app</title>
 </head>
 
 <body>
-    <h1>Advice</h1>
+
+    <div class="advice">
+        <div class="adviceNum"></div>
+        <div class="adviceText"></div>
+        <img class="adviceImg" src="images/pattern-divider-desktop.svg" alt="divider" />
+        <button class="adviceBtn" onclick="getData()"><img src="images/icon-dice.svg" alt="icon-dice" /></button>
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.linkedin.com/in/katya-rukosuev/" target="_blank"> Katya Ru</a>.
+    </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>
