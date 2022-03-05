@@ -14,10 +14,17 @@ app.use(express.static(path.resolve(__dirname, 'public/order-summary'))) //stati
 
 //ROUTER
 const index = require('./router')
-const projects = require('./router/projects')
+const projects = require('./router/projects');
 
-app.use('/', index)
-app.use('/', projects)
+// app.use('/', index)
+// app.use('/', projects)
+app.get('/', (req, res) => {
+    res.status(200).sendFile('index.html')
+})
+
+// app.get('/pro', (req, res) => {
+//     res.status(200).sendFile(__dirname, 'order-summary/index.html')
+// })
 
 app.get('*', function (req, res) {
     res.status(404).sendFile(__dirname, '/404.html');
