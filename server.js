@@ -16,7 +16,15 @@ const index = require('./router')
 const projects = require('./router/projects')
 
 app.use('/', index)
-app.use('/', projects)
+// app.use('/', projects)
+
+app.get('/order-summery', async (req, res) => {
+    try {
+        res.sendFile(path.resolve(__dirname, './public/order-summary/index.html'))
+    } catch (err) {
+        console.log(color.bgRed.black(err))
+    }
+})
 
 try {
     app.listen(PORT, () => {

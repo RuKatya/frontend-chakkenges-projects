@@ -1,8 +1,7 @@
 //Express
 const { Router } = require('express')
 const router = Router()
-const express = require('express');
-const app = express(); //express
+
 //PATH
 const path = require('path')
 //Colors
