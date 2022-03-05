@@ -38,10 +38,6 @@ The designs created to the following widths:
 
 ![](./images/screenshot-desktop.JPG)
 
-### Links
-
-- Solution URL: [Github](https://github.com/RuKatya/Frontend_Projects/tree/main/order-summary)
-
 <hr>
 
 ## Process
