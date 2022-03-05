@@ -20,7 +20,7 @@ app.use('/', index)
 
 app.get('/order-summery', async (req, res) => {
     try {
-        res.sendFile(path.resolve(__dirname, './public/order-summary/index.html'))
+        res.sendFile(path.resolve(__dirname, 'public/order-summary/index.html'))
     } catch (err) {
         console.log(color.bgRed.black(err))
     }
