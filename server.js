@@ -19,7 +19,7 @@ const projects = require('./router/projects')
 app.use('/', index)
 app.use('/', projects)
 app.get('*', function (req, res) {
-    res.status(404).send('what???');
+    res.status(404).sendFile(__dirname, '/404.html');
 });
 
 try {
