@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 6565; //connect to port 6565
 
 
 app.use(express.static(path.resolve(__dirname, 'public'))) //static
-app.use(express.static(path.resolve(__dirname, 'public/order-summary'))) //static
+// app.use(express.static(path.resolve(__dirname, 'public/order-summary'))) //static
 
 //ROUTER
 const index = require('./router')
