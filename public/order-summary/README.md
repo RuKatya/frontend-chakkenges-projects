@@ -40,6 +40,10 @@ The designs created to the following widths:
 
 <hr>
 
+### Links
+
+- [Live Site URL](https://frontend-chakkenges-projects.vercel.app/order-summary/index.html)
+
 ## Process
 
 ### Built with
@@ -47,8 +51,9 @@ The designs created to the following widths:
 - Semantic HTML5 markup
 - SCSS
   - Flexbox
-  - CSS Grid
-- Mobile first
+  - Grid
+  - Varibals
+- Mobile-first workflow
 
 ## Author
 
