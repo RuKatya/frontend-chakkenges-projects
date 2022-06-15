@@ -14,6 +14,7 @@ app.use(express.static(path.resolve(__dirname, 'public'))) //static
 const index = require('./router')
 
 app.use('/', index)
+app.get('/blabla', express.static('priview-card/build'))
 
 app.get('*', function (req, res) {
     res.status(404).sendFile(__dirname, '/404.html');
