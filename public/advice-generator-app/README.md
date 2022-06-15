@@ -38,7 +38,7 @@ The designs created to the following widths:
 
 ### Links
 
-- [Live Site URL](https://frontend-chakkenges-projects.vercel.app/advice-generator-app/index.html)
+- [Live Site URL](https://frontend-challenges-projects.vercel.app/advice-generator-app/index.html)
 
 ## Process
 
